@@ -5,7 +5,7 @@ var plan = require('flightplan');
 
 var appName = 'gcva_api';
 var username = 'deploy';
-var startFile = 'app.js';
+var startFile = 'server.js';
 
 var tmpDir = appName+'-' + new Date().getTime();
 
