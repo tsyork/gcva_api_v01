@@ -8,7 +8,8 @@
 var mongoose   = require('mongoose');
 var request = require('request');
 
-mongoose.connect('gcvauser:Magg13m0@ds059712.mongolab.com:59712/gcvanalytics'); // connect to our database
+//mongoose.connect('gcvauser:Magg13m0@ds059712.mongolab.com:59712/gcvanalytics'); // connect to our database
+mongoose.connect('mongodb://localhost/gcvanalytics');
 
 var Ticket     = require('./app/models/ticket');
 
@@ -73,6 +74,8 @@ router.route('/tickets')
 
         res.send(trustedTicket);
       });
+      console.log("ticket saved")
+
     });
   })
 
